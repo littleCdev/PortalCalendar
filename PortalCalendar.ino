@@ -363,7 +363,7 @@ void showCalendar()
     // day x of y
     char tmpstr[30] = { 0 };
 #ifdef ShowTime
-    sprintf(tmpstr, "%i:%i", now.Hour(), now.Minute());
+    sprintf(tmpstr, "%02i:%02i", now.Hour(), now.Minute());
 #else
     sprintf(tmpstr, "%i/%i", now.Day(), monthdays[now.Month() - 1]);
 #endif
